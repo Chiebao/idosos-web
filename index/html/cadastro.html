@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Cadastro de voluntários e doadores do Conecta Idosos - participe da transformação digital da terceira idade.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Conecta Idosos</title>
+    <link rel="stylesheet" href="/estilização/base.css">
+    <link rel="stylesheet" href="/estilização/layout.css">
+    <link rel="stylesheet" href="/estilização/componentes.css">
+    <link rel="stylesheet" href="/estilização/responsive.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            
+        <a href="/html/index.html" class="logo">
+            <img src="/img/Logo_ONG.png"Logo Conecta Idosos">
+        </a>
+
+
+        <nav aria-label="Menu principal">
+            <ul class="menu">
+                <li><a href="/html/index.html"" >Início</a></li>
+                <li><a href="/html/projetos.html">Projetos</a></li>
+                <li><a href="/html/cadastro.html" class="ativo" >Cadastro</a></li>
+            </ul>
+        </nav>
+
+  
+
+        <button class="menu-toggle">☰</button>
+    </header>
+
+  
+  <main id="content">
+   
+    <section id="institucional" class="banner">
+      <div class="banner-text">
+        <h1>Cadastre-se no Conecta Idosos</h1>
+        <p>
+          Construir um futuro digital acessível e digno para pessoas idosas é um compromisso que assumimos juntos.
+          No <strong>Instituto Conecta Idosos</strong>, a tecnologia é uma ponte para autonomia, comunicação e bem-estar.
+        </p>
+        <p>
+          Você pode apoiar nossa missão de inclusão digital como <strong>voluntário</strong> ou <strong>doador</strong>, ampliando o impacto social dessa transformação.
+        </p>
+        <a href="/html/index.html" class="btn">CONHEÇA A ONG</a>
+      </div>
+      <img class= banner-img src="/img/Voluntário ajudando idoso a usar o celular.png" alt="Banner Idosos Aprendendo Tecnologia"> 
+    </section>
+
+    <section id="sobre-nos" class="section">
+      <div class="grid-2">
+        <figure class="card">
+        <figcaption>Junte-se a nós e transforme vidas com paciência, empatia e tecnologia.</figcaption>
+        <img class= outras-img src="/img/voluntária ensinando.png" alt="Voluntário ajudando idoso a usar o celular" loading="lazy">
+      </figure>
+    </section>
+
+   
+    <section id="formulario-cadastro" class="form-section">
+      <h2>Formulário de Inscrição</h2>
+      <form action="#" method="post">
+        
+    
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00"
+                 pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato: 000.000.000-00" required>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 91234-5678"
+                 pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" title="Formato: (11) 91234-5678" required>
+
+          <label for="data-nascimento">Data de Nascimento:</label>
+          <input type="date" id="data-nascimento" name="data-nascimento" required>
+        </fieldset>
+
+       
+        <fieldset>
+          <legend>Endereço</legend>
+
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Rua, número e complemento" required>
+
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" placeholder="00000-000"
+                 pattern="\d{5}-\d{3}" title="Formato: 00000-000" required>
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+
+          <label for="estado">Estado:</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="BA">Bahia</option>
+            <option value="PE">Pernambuco</option>
+            <option value="OUTROS">Outros</option>
+          </select>
+        </fieldset>
+
+       
+        <fieldset>
+          <legend>Como deseja participar?</legend>
+          <div class="opcoes-participacao">
+            <label><input type="radio" name="tipo-participacao" value="voluntario" required> Quero ser Voluntário</label>
+            <label><input type="radio" name="tipo-participacao" value="doador" required> Quero Doar</label>
+          </div>
+        </fieldset>
+
+     
+        <fieldset>
+          <legend>Mensagem</legend>
+          <label for="mensagem">Conte um pouco sobre você (opcional):</label>
+          <textarea id="mensagem" name="mensagem" rows="3" placeholder="Compartilhe suas motivações..."></textarea>
+        </fieldset>
+
+
+        <div class="botoes">
+          <button type="reset" class="btn-secundario">Limpar</button>
+          <button type="submit" class="btn-primario">Enviar Cadastro</button>
+        </div>
+      </form>
+    </section>
+
+
+    <aside id="funcionalidades" class="section">
+      <h2>Por que participar?</h2>
+        <ul class="grid-2 list-icons">
+        <li>💻 Transforme vidas por meio da inclusão digital.</li>
+        <li>📱 Aprenda e ensine o uso consciente da tecnologia.</li>
+        <li>💬 Construa conexões significativas com a terceira idade.</li>
+        <li>🎓 Receba certificado digital de voluntariado.</li>
+      </ul>
+    </aside>
+
+
+    <aside id="participar" class="section">
+      <ul class="actions"></ul>
+      <h2>Quer contribuir com nossa causa?</h2>
+      <p>Sua doação ajuda a manter nossos cursos gratuitos e levar tecnologia a mais idosos. </p>
+      <li><a  href="https://www.vakinha.com.br" class="btn">Fazer Doação</a></li>
+      </ul>
+    </ASide>
+  </main>
+
+ 
+  <footer>
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <p>Email: <a href="mailto:contato@conectaidosos.org.br">contato@conectaidosos.org.br</a></p>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>Endereço: Rua da Conexão, 150 - Sorocaba, SP</p>
+    </section>
+    <p>&copy; 2025 Conecta Idosos | Todos os direitos reservados.</p>
+  </footer>
+
+<script src="/script/script.js"></script>
+</body>
+
+</html>
